@@ -37,7 +37,7 @@ function App() {
         <div data-aos="fade-left" className="sectioninfo" >
           <h1>hi, I'm <strong>Julia</strong></h1>
           <p>
-          5 years of experience in <i>web development / web design</i>. During this time I was a hard-working team member. Because of my international background I'm adaptable and flexible.  {<br/>}{<br/>}I am looking for a position where I can use my technical and creative skills to create user concentrated digital solutions. 
+          I have 5 years of experience in <i>web development / web design</i>. During this time I was a hard-working team member. Because of my international background I'm adaptable and flexible.  {<br/>}{<br/>}I am always looking for opportunities where I can use my technical and creative skills to create user concentrated digital solutions. 
           </p>
         </div>
       </section>
