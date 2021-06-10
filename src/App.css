@@ -118,7 +118,7 @@ h1 {
   position: fixed;
   top:0;
   left:0;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 35%, rgba(3,5,26,1) 60%, rgba(67,74,106,1) 100%);;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 35%, rgba(19,24,74,1) 60%, rgba(82,91,129,1) 100%);
 }
 
 
@@ -169,6 +169,12 @@ li img{
   text-align: center;
   margin: 0;
 }
+footer{
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  width: 100vw;
+}
 
 /* @media only screen and (min-width: 951px) and (max-width: 1200px) {
   .projectsection:nth-of-type(even) .projectphoto{
@@ -199,7 +205,7 @@ li img{
   height: 22vw
 }
 
-.projectsection:nth-of-type(even){
+.projectsection:nth-of-type(odd){
   margin: 19rem 6rem 3rem 0rem;
   /* flex-direction: column-reverse; */
 }
@@ -221,11 +227,11 @@ li img{
   right: 15vw;
   position:relative;
 }
-.projectsection:nth-of-type(even) .projectphoto{
+.projectsection:nth-of-type(odd) .projectphoto{
   left: 16rem;
 }
 
-.projectsection:nth-of-type(even) .projectinfo{
+.projectsection:nth-of-type(odd) .projectinfo{
   left: 0;
   padding: 3rem 7rem 3rem 6rem;
 }

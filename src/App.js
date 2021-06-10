@@ -1,11 +1,15 @@
 import './App.css';
 import React from 'react';
 import {useEffect, useState} from 'react'; 
-import Projects from './projects'
+import Projects from './projects';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
   const [projects, setProjects] = useState([])
-
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+  },[])
   useEffect(() => {
    fetch( "https://portfolio-f43b.restdb.io/rest/portfolio2021" , {
       method: "get",
@@ -29,8 +33,8 @@ function App() {
         <h1>JuliaZofia</h1>
       </header>
       <section className="aboutme">
-        <img className="profilephoto" src={process.env.PUBLIC_URL + "/images/profile.png"} alt="portait of Julia Swidron, standing in front of colorfull wall" />
-        <div className="sectioninfo" >
+        <img data-aos="fade-right" className="profilephoto" loading="lazy" src={process.env.PUBLIC_URL + "/images/profile.png"} alt="portait of Julia Swidron, standing in front of colorfull wall" />
+        <div data-aos="fade-left" className="sectioninfo" >
           <h1>hi, I'm <strong>Julia</strong></h1>
           <p>
           5 years of experience in <i>web development / web design</i>. During this time I was a hard-working team member. Because of my international background I'm adaptable and flexible.  {<br/>}{<br/>}I am looking for a position where I can use my technical and creative skills to create user concentrated digital solutions. 
@@ -57,6 +61,8 @@ function App() {
       </div>
       <div className="background"></div>
       <Projects projects={projects} />
+
+      <footer data-aos="fade-down"><h1>Thank you!</h1><p>Feel free to contact me at: juliaswidron10@gmail.com</p></footer>
     </div>
   );
 }
