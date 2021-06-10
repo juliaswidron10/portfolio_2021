@@ -9,7 +9,7 @@ export default function Project(props) {
           <h2>{props.place} | {props.timePeriod}</h2>
           <p>{props.description}</p>
           <p className="technologies">Technologies Used: {props.technologies}</p>
-          <a target="_blank" href={props.link} >Go to the solution</a>
+          <a href={props.link} >Go to the solution</a>
         </div>
       </section>
     )
