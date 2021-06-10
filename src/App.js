@@ -48,12 +48,12 @@ function App() {
       <div className="socials">
         <ul>
           <li>
-            <a href="https://github.com/juliaswidron10">
+            <a target="_blank" href="https://github.com/juliaswidron10">
             <img  src={process.env.PUBLIC_URL + "/images/github.svg"} alt="github logo" />
             <p>GitHub</p>
               </a></li>
           <li>
-            <a href="https://www.linkedin.com/in/julia-swidron-b5642a172/">
+            <a target="_blank" href="https://www.linkedin.com/in/julia-swidron-b5642a172/">
               <img src={process.env.PUBLIC_URL + "/images/linkedin.svg"} alt="linkedIn logo" />
               <p>LinkedIn</p>
             </a></li>
